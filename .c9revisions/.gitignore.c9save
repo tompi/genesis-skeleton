@@ -1,0 +1,2 @@
+{"ts":1360834242807,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,".DS_STORE\ncomponents\ndist\nnode_modules\nnpm-debug.log\n"]],"start1":0,"start2":0,"length1":0,"length2":53}]],"length":53}
+{"contributors":[],"silentsave":false,"ts":1360834340866,"patch":[[{"diffs":[[0,"nts\n"],[-1,"dist\n"],[0,"node"]],"start1":17,"start2":17,"length1":13,"length2":8}]],"length":48,"saved":false}

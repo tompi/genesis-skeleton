@@ -1,0 +1,7 @@
+{"ts":1360828626081,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"web: npm start\n"]],"start1":0,"start2":0,"length1":0,"length2":15}]],"length":15}
+{"contributors":[],"silentsave":false,"ts":1360828843281,"patch":[[{"diffs":[[0,"npm "],[-1,"start"],[1,"./src/server/lib/server.js"],[0,"\n"]],"start1":5,"start2":5,"length1":10,"length2":31}]],"length":36,"saved":false}
+{"ts":1360829040101,"patch":[[{"diffs":[[0,"b: n"],[-1,"pm"],[1,"ode"],[0," ./s"]],"start1":2,"start2":2,"length1":10,"length2":11}]],"length":37,"saved":false}
+{"ts":1360829429913,"patch":[[{"diffs":[[0,"ode "],[-1,"./src/server/lib/"],[0,"serv"]],"start1":6,"start2":6,"length1":25,"length2":8}]],"length":20,"saved":false}
+{"ts":1360829504855,"patch":[[{"diffs":[[0,"ode "],[-1,"server"],[1,"./src/server/libs/app"],[0,".js\n"]],"start1":6,"start2":6,"length1":14,"length2":29}]],"length":35,"saved":false}
+{"ts":1360830223851,"patch":[[{"diffs":[[0,"ver/"],[-1,"libs/"],[0,"app."]],"start1":19,"start2":19,"length1":13,"length2":8}]],"length":30,"saved":false}
+{"ts":1360830764340,"patch":[[{"diffs":[[0,"ver/"],[-1,"app"],[1,"server"],[0,".js\n"]],"start1":19,"start2":19,"length1":11,"length2":14}]],"length":33,"saved":false}
