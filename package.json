@@ -1,13 +1,13 @@
 {
-  "title": "Genesis Skeleton",
-  "name": "genesis-skeleton",
-  "description": "Modern application skeleton - HTML5 Boilerplate + Angular + Express + Grunt + LiveReload + Bootstrap + Bower",
+  "title": "Ruter7 open 2013",
+  "name": "ruter7open",
+  "description": "Ruter7 open tournament site",
   "version": "0.0.1",
   "author": {
-    "name": "Eric Clemmons",
-    "email": "eric@smarterspam"
+    "name": "Thomas Haukland",
+    "email": "thomas.haukland@gmail.com"
   },
-  "homepage": "https://github.com/ericclemmons/genesis-skeleton",
+  "homepage": "http://open.ruter7.com",
   "bugs": "https://github.com/ericclemmons/genesis-skeleton/issues",
   "licenses": [
     {
@@ -20,7 +20,7 @@
     "npm": "1.1.x"
   },
   "scripts": {
-    "start": "./node_modules/.bin/grunt build && node src/server/server",
+    "start": "node src/server/server",
     "install": "bower install",
     "test": "./node_modules/.bin/grunt build"
   },
