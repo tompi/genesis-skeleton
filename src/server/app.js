@@ -14,7 +14,7 @@ app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-app.use(express.cookieParser('change this value to something unique'));
+app.use(express.cookieParser('secretruter7hmm'));
 app.use(express.cookieSession());
 app.use(express.compress());
 app.use(api);
