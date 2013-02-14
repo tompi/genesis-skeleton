@@ -164,20 +164,54 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "<header ng-include=\"'app/partials/header.html'\"></header>" +
     "<section id=\"about\">" +
     "    <div class=\"container-narrow\" autoscroll>" +
-    "        <h3>Velkommen til bridgefest!</h3>" +
-    "        <p>Turneringen som samler eliten og nybegynnere i en fantastisk turnering." +
-    "            I år utvider vi med turneringer også på søndag. Lørdagens stjernespillere" +
-    "            samles i en lukket Kryssimpturnering, mens vi øvrige skal forsøke oss i" +
-    "            en åpen handikapturnering.</p>" +
-    "        <p>Lørdagens parturnering er for absolutt alle. Meld deg på som par akkurat" +
-    "            som du pleier, men har du mindre enn 30 mesterpoeng kan du bli trukket" +
-    "            ut til å spille med en av våre stjernespillere. Se under påmelding for" +
-    "            detaljer.</p>" +
-    "        <p>Etter den sosiale turneringen lørdag lover vi en minneverdig kveld!! Inger" +
-    "            Lene Hangeland og hennes far Torbjørn disker opp med mat i gourmetklassen!!" +
-    "            Lakserose, indrefilet av hjort og vaniljepanacotta er årets meny.</p>" +
-    "        <p>Lørdag kveld kommer 2 av landsdelens aller beste musikere for å underholde." +
-    "            Først ut er Transit og etterpå skal Sordal få bridgespillere</p>" +
+    "        <div class=\"row-fluid\">" +
+    "            <div class=\"span7\">" +
+    "                <h3>Hotell Caledonien 1. og 2. Juni</h3>" +
+    "                <p>Vi samler eliten og nybegynnere i en fantastisk hyggelig turnering" +
+    "                i Kristiansand. I år spiller vi på" +
+    "                    <a href=\"http://www.radissonblu.no/hotel-kristiansand\">hotell Caledonien</a>.</p>" +
+    "                <h3>Program</h3>" +
+    "                <p>" +
+    "                    <b>Fredag 31. mai</b>" +
+    "                    <ul>" +
+    "                        <li>" +
+    "                            <b>18.00-02:00 </b>Bridgepub på vinkjelleren, hotel caledonien. Vi har hele" +
+    "                            kjelleren for oss selv</li>" +
+    "                    </ul>" +
+    "                    <b>Lørdag 1. juni</b>" +
+    "                    <ul>" +
+    "                        <li>" +
+    "                            <b>10:00-18:00 </b>Hovedturnering.</li>" +
+    "                        <li>" +
+    "                            <b>13:30-14:30 </b>Caledoniens berømte lunsjbuffet.</li>" +
+    "                        <li>" +
+    "                            <b>19:30-02:00 </b>3-retters gallamiddag og så konsert med Stein Roger Sordal" +
+    "                            og co.</li>" +
+    "                    </ul>" +
+    "                    <b>Søndag 2. juni</b>" +
+    "                    <ul>" +
+    "                        <li>" +
+    "                            <b>10:00-16:00 </b>Åpen gruppe.</li>" +
+    "                        <li>" +
+    "                            <b>10:00-16:00 </b>Eliteturnering.</li>" +
+    "                    </ul>" +
+    "                </p>" +
+    "                <p>Lørdagens parturnering er for absolutt alle. Meld deg på som par akkurat" +
+    "                    som du pleier, men har du mindre enn 30 mesterpoeng kan du bli trukket" +
+    "                    ut til å spille med en av våre stjernespillere. Se under påmelding for" +
+    "                    detaljer.</p>" +
+    "                <h2></h2>" +
+    "                <p></p>" +
+    "            </div>" +
+    "            <div class=\"span5\">" +
+    "                <div class=\"smallpic\">" +
+    "                    <img src=\"/img/small/knuste-helgemo.png\" alt=\"Knuste Helgemo\" />" +
+    "                </div>" +
+    "                <div class=\"smallpic\">" +
+    "                    <img src=\"/img/small/hotellfasade-small.png\" alt=\"Spille-hotellet\" />" +
+    "                </div>" +
+    "            </div>" +
+    "        </div>" +
     "    </div>" +
     "</section>" +
     ""
@@ -186,18 +220,54 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
   $templateCache.put("app/partials/nav.html",
     "<div class=\"navbar navbar-fixed-top navbar-inverse\" bs-navbar>" +
     "  <div class=\"navbar-inner\">" +
-    "    <div class=\"container-narrow\">" +
+    "  <div class=\"container-narrow\">" +
     "      <ul class=\"nav\">" +
     "        <li data-match-route=\"/\"><a href=\"#/home\">Hjem</a></li>" +
-    "        <li data-match-route=\"/program\"><a href=\"#/guide\">Program</a></li>" +
-    "        <li data-match-route=\"/stjerner\"><a href=\"#/guide\">Stjerner</a></li>" +
-    "        <li data-match-route=\"/paamelding\"><a href=\"#/guide\">Påmelding</a></li>" +
-    "        <li data-match-route=\"/overnatting\"><a href=\"#/guide\">Overnatting</a></li>" +
-    "        <li data-match-route=\"/kart\"><a href=\"#/guide\">Kart</a></li>" +
+    "        <li data-match-route=\"/spillested\"><a href=\"#/spillested\">Spillested/overnatting</a></li>" +
+    "        <li data-match-route=\"/stjerner\"><a href=\"#/stjerner\">Stjerner</a></li>" +
+    "        <li data-match-route=\"/paamelding\"><a href=\"#/paamelding\">Påmelding</a></li>" +
     "      </ul>" +
+    "      <div class=\"clearfix\"></div>" +
+    "  </div>" +
+    "  </div>" +
+    "</div>" +
+    ""
+  );
+
+  $templateCache.put("app/partials/spillested.html",
+    "<div class=\"container-narrow\">" +
+    "  <div class=\"row-fluid\">" +
+    "    <div>" +
+    "      <h3>Velkommen til hotell Caledonien.</h3>" +
     "    </div>" +
     "  </div>" +
     "</div>" +
+    "<section id=\"about\">" +
+    "    <div class=\"container-narrow\" autoscroll>" +
+    "        <div class=\"row-fluid\">" +
+    "            <div class=\"span7\">" +
+    "                <p>" +
+    "                  Priser pr. rom pr. natt, inkludert frokost og mva:" +
+    "                  <ul>" +
+    "                      <li>Enkeltrom: <b>945,-</b></li>" +
+    "                      <li>Dobbeltrom: <b>945,-</b></li>" +
+    "                  </ul>" +
+    "                  Bruk denne lenken for å bestille: <a href=\"http://www.radissonblu.no/booking-entrance?language=no&countrycode=NO&cityid=Kristiansand&paccode=Ruter7\">rabatterte rom.</a>" +
+    "                    ( Husk å skrive inn riktig dato i høyre felt)" +
+    "                </p>" +
+    "            </div>" +
+    "            <div class=\"span5\">" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/hotell1.jpg\" alt=\"hotell\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/hotell2.jpg\" alt=\"hotell\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/hotell3.jpg\" alt=\"hotell\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/hotell4.jpg\" alt=\"hotell\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/hotell5.jpg\" alt=\"hotell\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/hotell6.jpg\" alt=\"hotell\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/hotell7.jpg\" alt=\"hotell\" /></div>" +
+    "            </div>" +
+    "        </div>" +
+    "    </div>" +
+    "</section>" +
     ""
   );
 

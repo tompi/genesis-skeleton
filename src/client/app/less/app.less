@@ -8,12 +8,18 @@
 @import "../../../../components/bootstrap/less/utilities.less"; // Has to be last to override when necessary
 @import "../../../../components/bootstrap/less/responsive.less";
 
+div.smallpic img {
+    border: 3px solid @orange;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+}
+
 @fontMultiplier: 2;
 
 @media (min-width: 980px) {
   /* Fixed navbar needs padding */
   #app {
-    padding-top: @baseLineHeight * 2;
+    padding-top: 60px;
   }
 }
 
@@ -39,7 +45,10 @@
     padding-right: 20px;
   }
 }
-
+body.fasade {
+  background: @gray url("../img/hotellfasade.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
 body {
   background: @gray url("../img/sal.jpg") no-repeat top center fixed;
   background-size: cover;
@@ -57,10 +66,6 @@ body {
 
 p.muted {
   text-align: center;
-}
-
-#about h3 {
-  display: none;
 }
 
 h3 {
@@ -123,9 +128,9 @@ h1,
 h2,
 h3 { line-height: @baseLineHeight * 2 * @fontMultiplier; }
 
-h1 { font-size: @baseFontSize * 2.75 * @fontMultiplier; } // ~38px
+h1 { font-size: 100px; } // ~38px
 h2 { font-size: @baseFontSize * 2.25 * @fontMultiplier; } // ~32px
-h3 { font-size: @baseFontSize * 1.75 * @fontMultiplier; } // ~24px
+h3 { font-size: 40px; } // ~24px
 h4 { font-size: @baseFontSize * 1.25 * @fontMultiplier; line-height: @baseFontSize * 1.25 * @fontMultiplier;} // ~18px
 h5 { font-size: @baseFontSize * @fontMultiplier; }
 h6 { font-size: @baseFontSize * 0.85 * @fontMultiplier; } // ~12px

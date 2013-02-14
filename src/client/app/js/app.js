@@ -9,13 +9,12 @@ angular
       .when('/', {
         redirectTo: '/home'
       })
-      .when('/home', {
-        templateUrl: 'app/partials/home.html'
-      })
-      .when('/guide', {
-        controller: 'app.controllers.guide',
-        templateUrl: 'app/partials/guide.html'
-      })
+      .when('/home', { templateUrl: 'app/partials/home.html'  })
+      .when('/program', { templateUrl: 'app/partials/program.html'  })
+      .when('/spillested', { templateUrl: 'app/partials/spillested.html'  })
+      .when('/stjerner', { templateUrl: 'app/partials/stjerner.html'  })
+      .when('/paamelding', {templateUrl: 'app/partials/paamelding.html'  })
+      .when('/overnatting', {templateUrl: 'app/partials/overnatting.html'  })
       .otherwise({
         controller: 'app.controllers.error',
         templateUrl: 'app/partials/error/index.html'
