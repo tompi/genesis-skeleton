@@ -204,6 +204,9 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "                <p></p>" +
     "            </div>" +
     "            <div class=\"span5\">" +
+    "                <div>" +
+    "                    <img src=\"/img/small/personalsjefen.png\" alt=\"Sponsor\" />" +
+    "                </div>" +
     "                <div class=\"smallpic\">" +
     "                    <img src=\"/img/small/knuste-helgemo.png\" alt=\"Knuste Helgemo\" />" +
     "                </div>" +
