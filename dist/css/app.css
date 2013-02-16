@@ -9253,7 +9253,17 @@ a.badge:hover {
 div.smallpic img {
   border: 3px solid #f89406;
   border-radius: 10px;
+}
+div.smallpic img,
+div.sponsor img {
   margin: 0 0 15px 0;
+}
+.btn {
+  margin-bottom: 5px;
+}
+div.ruter7logo img {
+  background-color: gray;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 @media (min-width: 980px) {
   /* Fixed navbar needs padding */

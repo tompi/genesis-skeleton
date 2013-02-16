@@ -167,51 +167,90 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "        <div class=\"row-fluid\">" +
     "            <div class=\"span7\">" +
     "                <h3>Hotell Caledonien 1. og 2. Juni</h3>" +
-    "                <p>Vi samler eliten og nybegynnere i en fantastisk hyggelig turnering" +
-    "                i Kristiansand. I år spiller vi på" +
+    "                <p>Vi samler eliten og nybegynnere i en fantastisk hyggelig turnering i Kristiansand." +
+    "                    I år spiller vi på" +
     "                    <a href=\"http://www.radissonblu.no/hotel-kristiansand\">hotell Caledonien</a>.</p>" +
     "                <h3>Program</h3>" +
     "                <p>" +
     "                    <b>Fredag 31. mai</b>" +
     "                    <ul>" +
     "                        <li>" +
-    "                            <b>18.00-02:00 </b>Bridgepub på vinkjelleren, hotel caledonien. Vi har hele" +
+    "                            <b>18.00-02:00</b>Bridgepub på vinkjelleren, hotel caledonien. Vi har hele" +
     "                            kjelleren for oss selv</li>" +
     "                    </ul>" +
     "                    <b>Lørdag 1. juni</b>" +
     "                    <ul>" +
     "                        <li>" +
-    "                            <b>10:00-18:00 </b>Hovedturnering.</li>" +
+    "                            <b>10:00-18:00</b>Hovedturnering. 500 per spiller, inkludert kaffe og lunch." +
+    "                            <ul>" +
+    "                                <li>" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/439\" class=\"\">" +
+    "                                    Jeg vil spille med en stjerne" +
+    "                                </a>" +
+    "                                </li>" +
+    "                                <li>" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/438\" class=\"\">" +
+    "                                    Jeg vil spille med min egen makker" +
+    "                                </a>" +
+    "                                </li>" +
+    "                            </ul>" +
+    "                        </li>" +
     "                        <li>" +
-    "                            <b>13:30-14:30 </b>Caledoniens berømte lunsjbuffet.</li>" +
+    "                            <b>13:30-14:30</b>Caledoniens berømte lunsjbuffet.</li>" +
     "                        <li>" +
-    "                            <b>19:30-02:00 </b>3-retters gallamiddag og så konsert med Stein Roger Sordal" +
-    "                            og co.</li>" +
+    "                            <b>19:30-02:00</b>3-retters gallamiddag og så konsert med Stein Roger Sordal" +
+    "                            og co. 500 per person.</li>" +
     "                    </ul>" +
     "                    <b>Søndag 2. juni</b>" +
     "                    <ul>" +
     "                        <li>" +
-    "                            <b>10:00-16:00 </b>Åpen gruppe.</li>" +
+    "                            <b>10:00-16:00</b>Åpen gruppe. 200 per spiller, inkludert kaffe og te." +
+    "                            <ul>" +
+    "                                <li>" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/440\" class=\"\">Jeg vil spille åpen gruppe</a>" +
+    "                                </li>" +
+    "                            </ul>" +
+    "                        </li>" +
     "                        <li>" +
-    "                            <b>10:00-16:00 </b>Eliteturnering.</li>" +
+    "                            <b>10:00-16:00</b>Eliteturnering. 300 per spiller, inkludert kaffe og te." +
+    "                            <ul>" +
+    "                                <li>" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/440\" class=\"\">" +
+    "                                    Jeg er god nok for eliteturneringen" +
+    "                                </a>" +
+    "                                </li>" +
+    "                            </ul>" +
+    "                        </li>" +
     "                    </ul>" +
     "                </p>" +
+    "                <p>Husk at du må logge på bridge.no før du får muligheten til å melde deg" +
+    "                    på turneringene.</p>" +
     "                <p>Lørdagens parturnering er for absolutt alle. Meld deg på som par akkurat" +
     "                    som du pleier, men har du mindre enn 30 mesterpoeng kan du bli trukket" +
-    "                    ut til å spille med en av våre stjernespillere. Se under påmelding for" +
-    "                    detaljer.</p>" +
+    "                    ut til å spille med en av våre stjernespillere.</p>" +
     "                <h2></h2>" +
-    "                <p></p>" +
+    "                <h3>I fjor</h3>" +
+    "                <p>" +
+    "                    Her resultater, bilder og annen informasjon fra fjorårets turnering:" +
+    "                    <a href=\"http://open2012.ruter7.com\" alt=\"2012\">Ruter7 open 2012</a>." +
+    "                </p>" +
     "            </div>" +
     "            <div class=\"span5\">" +
-    "                <div>" +
+    "                <div class=\"sponsor\">" +
+    "                    <a href=\"http://www.personalsjefen.org\" alt=\"Personalsjefen\">" +
     "                    <img src=\"/img/small/personalsjefen.png\" alt=\"Sponsor\" />" +
+    "                    </a>" +
     "                </div>" +
     "                <div class=\"smallpic\">" +
     "                    <img src=\"/img/small/knuste-helgemo.png\" alt=\"Knuste Helgemo\" />" +
     "                </div>" +
     "                <div class=\"smallpic\">" +
     "                    <img src=\"/img/small/hotellfasade-small.png\" alt=\"Spille-hotellet\" />" +
+    "                </div>" +
+    "                <div class=\"smallpic ruter7logo\">" +
+    "                    <a href=\"http://www.ruter7.com\" alt=\"Ruter7\">" +
+    "                    <img src=\"/img/ruter7logo.png\" alt=\"Ruter7\" />" +
+    "                    </a>" +
     "                </div>" +
     "            </div>" +
     "        </div>" +
@@ -228,7 +267,6 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "        <li data-match-route=\"/\"><a href=\"#/home\">Hjem</a></li>" +
     "        <li data-match-route=\"/spillested\"><a href=\"#/spillested\">Spillested/overnatting</a></li>" +
     "        <li data-match-route=\"/stjerner\"><a href=\"#/stjerner\">Stjerner</a></li>" +
-    "        <li data-match-route=\"/paamelding\"><a href=\"#/paamelding\">Påmelding</a></li>" +
     "      </ul>" +
     "      <div class=\"clearfix\"></div>" +
     "  </div>" +
@@ -271,6 +309,17 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "        </div>" +
     "    </div>" +
     "</section>" +
+    ""
+  );
+
+  $templateCache.put("app/partials/stjerner.html",
+    "<div class=\"container-narrow\">" +
+    "  <div class=\"row-fluid\">" +
+    "    <div>" +
+    "      <h3>1. gruppe stjernespillere kommer 1. mars.</h3>" +
+    "    </div>" +
+    "  </div>" +
+    "</div>" +
     ""
   );
 
