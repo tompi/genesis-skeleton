@@ -547,11 +547,11 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
 
   $templateCache.put("app/partials/tidligere.html",
     "<div class=\"container-narrow\">" +
-    "  <div class=\"row-fluid\">" +
-    "    <div>" +
-    "      <h2>Tidligere år</h2>" +
+    "    <div class=\"row-fluid\">" +
+    "        <div>" +
+    "            <h2>Tidligere år</h2>" +
+    "        </div>" +
     "    </div>" +
-    "  </div>" +
     "</div>" +
     "<section id=\"about\">" +
     "    <div class=\"container-narrow\" autoscroll>" +
@@ -561,11 +561,46 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "                <p>" +
     "                    <a href=\"http://open2012.ruter7.com\">Bilder, resultater mm fra 2012.</a>" +
     "                </p>" +
+    "                <h3>2011</h3>" +
+    "                <ul>" +
+    "                    <li>" +
+    "                        <a href=\"https://picasaweb.google.com/snorreaalberg/Ruter72010#slideshow/5484885543852902178\"" +
+    "                        alt=\"bilder\">Bilder</a>" +
+    "                    </li>" +
+    "                    <li>" +
+    "                        <a href=\"http://nbfdata.bridge.no/Ruter/2011/Ruter7/Open.htm\" alt=\"Resultater\">Resultater</a>" +
+    "                    </li>" +
+    "                </ul>" +
+    "                <h3>2010</h3>" +
+    "                <ul>" +
+    "                    <li>" +
+    "                        <a href=\"https://picasaweb.google.com/snorreaalberg/Ruter7Open2011?authkey=Gv1sRgCIicp-_Vovvrfg#slideshow/5614660572087062274\"" +
+    "                        alt=\"bilder\">Bilder</a>" +
+    "                    </li>" +
+    "                    <li>" +
+    "                        <a href=\"http://nbfdata.bridge.no/Turnering/default.asp?Fil=ruter7Open2010\"" +
+    "                        alt=\"Resultater\">Resultater Hovedturnering</a>" +
+    "                    </li>" +
+    "                    <li>" +
+    "                        <a href=\"http://nbfdata.bridge.no/Turnering/default.asp?Fil=Ruter7OpenSingelGulPulje\"" +
+    "                        alt=\"Resultater\">Resultater singel gul pulje</a>" +
+    "                    </li>" +
+    "                    <li>" +
+    "                        <a href=\"http://nbfdata.bridge.no/Turnering/default.asp?Fil=Ruter7OpenSingelHvitPulje\"" +
+    "                        alt=\"Resultater\">Resultater singel hvit pulje</a>" +
+    "                    </li>" +
+    "                </ul>" +
     "            </div>" +
     "            <div class=\"span5\">" +
-    "                <div class=\"smallpic\"><img src=\"/img/small/bente.png\" alt=\"Vinner lørdag\" /></div>" +
-    "                <div class=\"smallpic\"><img src=\"/img/small/sjur.png\" alt=\"Sjur m. makker\" /></div>" +
-    "                <div class=\"smallpic\"><img src=\"/img/small/sist.png\" alt=\"Sisteplassen\" /></div>" +
+    "                <div class=\"smallpic\">" +
+    "                    <img src=\"/img/small/bente.png\" alt=\"Vinner lørdag\" />" +
+    "                </div>" +
+    "                <div class=\"smallpic\">" +
+    "                    <img src=\"/img/small/sjur.png\" alt=\"Sjur m. makker\" />" +
+    "                </div>" +
+    "                <div class=\"smallpic\">" +
+    "                    <img src=\"/img/small/sist.png\" alt=\"Sisteplassen\" />" +
+    "                </div>" +
     "            </div>" +
     "        </div>" +
     "    </div>" +
