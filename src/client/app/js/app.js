@@ -14,7 +14,7 @@ angular
       .when('/spillested', { templateUrl: 'app/partials/spillested.html'  })
       .when('/stjerner', { templateUrl: 'app/partials/stjerner.html'  })
       .when('/paamelding', {templateUrl: 'app/partials/paamelding.html'  })
-      .when('/overnatting', {templateUrl: 'app/partials/overnatting.html'  })
+      .when('/tidligere', {templateUrl: 'app/partials/tidligere.html'  })
       .otherwise({
         controller: 'app.controllers.error',
         templateUrl: 'app/partials/error/index.html'

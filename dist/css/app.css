@@ -9258,6 +9258,17 @@ div.smallpic img,
 div.sponsor img {
   margin: 0 0 15px 0;
 }
+a.paamelding {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #f89406;
+  border-radius: 10px;
+}
+a.paamelding:hover {
+  background-color: black;
+  color: #f89406;
+}
 .btn {
   margin-bottom: 5px;
 }

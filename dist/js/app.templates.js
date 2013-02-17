@@ -175,65 +175,31 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "                    <b>Fredag 31. mai</b>" +
     "                    <ul>" +
     "                        <li>" +
-    "                            <b>18.00-02:00</b>Bridgepub på vinkjelleren, hotel caledonien. Vi har hele" +
+    "                            <b>18.00-02:00</b> Bridgepub på vinkjelleren, hotel caledonien. Vi har hele" +
     "                            kjelleren for oss selv</li>" +
     "                    </ul>" +
     "                    <b>Lørdag 1. juni</b>" +
     "                    <ul>" +
     "                        <li>" +
-    "                            <b>10:00-18:00</b>Hovedturnering. 500 per spiller, inkludert kaffe og lunch." +
-    "                            <ul>" +
-    "                                <li>" +
-    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/439\" class=\"\">" +
-    "                                    Jeg vil spille med en stjerne" +
-    "                                </a>" +
-    "                                </li>" +
-    "                                <li>" +
-    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/438\" class=\"\">" +
-    "                                    Jeg vil spille med min egen makker" +
-    "                                </a>" +
-    "                                </li>" +
-    "                            </ul>" +
+    "                            <b>10:00-18:00</b> Hovedturnering. 500 per spiller, inkludert kaffe og lunch." +
     "                        </li>" +
     "                        <li>" +
-    "                            <b>13:30-14:30</b>Caledoniens berømte lunsjbuffet.</li>" +
+    "                            <b>13:30-14:30</b> Caledoniens berømte lunsjbuffet.</li>" +
     "                        <li>" +
-    "                            <b>19:30-02:00</b>3-retters gallamiddag og så konsert med Stein Roger Sordal" +
+    "                            <b>19:30-02:00</b> 3-retters gallamiddag og så konsert med Stein Roger Sordal" +
     "                            og co. 500 per person.</li>" +
     "                    </ul>" +
     "                    <b>Søndag 2. juni</b>" +
     "                    <ul>" +
     "                        <li>" +
-    "                            <b>10:00-16:00</b>Åpen gruppe. 200 per spiller, inkludert kaffe og te." +
-    "                            <ul>" +
-    "                                <li>" +
-    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/440\" class=\"\">Jeg vil spille åpen gruppe</a>" +
-    "                                </li>" +
-    "                            </ul>" +
+    "                            <b>10:00-16:00</b> Åpen gruppe. 200 per spiller, inkludert kaffe og te." +
     "                        </li>" +
     "                        <li>" +
-    "                            <b>10:00-16:00</b>Eliteturnering. 300 per spiller, inkludert kaffe og te." +
-    "                            <ul>" +
-    "                                <li>" +
-    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/440\" class=\"\">" +
-    "                                    Jeg er god nok for eliteturneringen" +
-    "                                </a>" +
-    "                                </li>" +
-    "                            </ul>" +
+    "                            <b>10:00-16:00</b> Eliteturnering. 300 per spiller, inkludert kaffe og te." +
     "                        </li>" +
     "                    </ul>" +
     "                </p>" +
-    "                <p>Husk at du må logge på bridge.no før du får muligheten til å melde deg" +
-    "                    på turneringene.</p>" +
-    "                <p>Lørdagens parturnering er for absolutt alle. Meld deg på som par akkurat" +
-    "                    som du pleier, men har du mindre enn 30 mesterpoeng kan du bli trukket" +
-    "                    ut til å spille med en av våre stjernespillere.</p>" +
-    "                <h2></h2>" +
-    "                <h3>I fjor</h3>" +
-    "                <p>" +
-    "                    Her resultater, bilder og annen informasjon fra fjorårets turnering:" +
-    "                    <a href=\"http://open2012.ruter7.com\" alt=\"2012\">Ruter7 open 2012</a>." +
-    "                </p>" +
+    "                <p><a href=\"#/paamelding\">Trykk her</a> for mer info og melde deg på.</p>" +
     "            </div>" +
     "            <div class=\"span5\">" +
     "                <div class=\"sponsor\">" +
@@ -267,11 +233,88 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "        <li data-match-route=\"/\"><a href=\"#/home\">Hjem</a></li>" +
     "        <li data-match-route=\"/spillested\"><a href=\"#/spillested\">Spillested/overnatting</a></li>" +
     "        <li data-match-route=\"/stjerner\"><a href=\"#/stjerner\">Stjerner</a></li>" +
+    "        <li data-match-route=\"/paamelding\"><a href=\"#/paamelding\">Påmelding</a></li>" +
+    "        <li data-match-route=\"/tidligere\"><a href=\"#/tidligere\">Tidligere år</a></li>" +
     "      </ul>" +
     "      <div class=\"clearfix\"></div>" +
     "  </div>" +
     "  </div>" +
     "</div>" +
+    ""
+  );
+
+  $templateCache.put("app/partials/paamelding.html",
+    "<section id=\"about\">" +
+    "    <div class=\"container-narrow\" autoscroll>" +
+    "        <div class=\"row-fluid\">" +
+    "            <div class=\"span7\">" +
+    "                <h3>Påmelding</h3>" +
+    "                <p>Husk at du må logge på bridge.no før du får muligheten til å melde deg" +
+    "                    på turneringene.</p>" +
+    "                <p>Lørdagens parturnering er for absolutt alle. Meld deg på som par akkurat" +
+    "                    som du pleier, men har du mindre enn 30 mesterpoeng kan du bli trukket" +
+    "                    ut til å spille med en av våre stjernespillere.</p>" +
+    "                <p>" +
+    "                " +
+    "                    <b>Lørdag 1. juni</b>" +
+    "                    <ul>" +
+    "                        <li>" +
+    "                            <b>10:00-18:00</b> Hovedturnering. 500 per spiller, inkludert kaffe og lunch." +
+    "                            <ul>" +
+    "                                <li>" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/439\" class=\"paamelding\">" +
+    "                                    <i class=\"icon-star\"></i> Meld på til hovedturnering med trukket stjernemakker" +
+    "                                </a>" +
+    "                                </li>" +
+    "                                <li>" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/438\" class=\"paamelding\">" +
+    "                                    <i class=\"icon-star\"></i> Meld på til hovedturnering med egen makker" +
+    "                                </a>" +
+    "                                </li>" +
+    "                            </ul>" +
+    "                        </li>" +
+    "                        <li>" +
+    "                            <b>19:30-02:00</b> 3-retters gallamiddag og så konsert med Stein Roger Sordal" +
+    "                            og co. 500 per person." +
+    "                                <ul><li><a href=\"mailto:rune@ruter7.com\" class=\"paamelding\"><i class=\"icon-star\"></i> Mail Rune og si fra at du kommer</a></li></ul>" +
+    "                            </li>" +
+    "                    </ul>" +
+    "                    <b>Søndag 2. juni</b>" +
+    "                    <ul>" +
+    "                        <li>" +
+    "                            <b>10:00-16:00</b> Åpen gruppe. 200 per spiller, inkludert kaffe og te." +
+    "                            <ul>" +
+    "                                <li>" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/440\" class=\"paamelding\"><i class=\"icon-star\"></i> Meld på til åpen pulje søndag</a>" +
+    "                                </li>" +
+    "                            </ul>" +
+    "                        </li>" +
+    "                        <li>" +
+    "                            <b>10:00-16:00</b> Eliteturnering. 300 per spiller, inkludert kaffe og te. Du må ha minst 30 mesterpoeng for å spille." +
+    "                            <ul>" +
+    "                                <li>" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/440\" class=\"paamelding\">" +
+    "                                    <i class=\"icon-star\"></i> Meld på til eliteturneringen" +
+    "                                </a>" +
+    "                                </li>" +
+    "                            </ul>" +
+    "                        </li>" +
+    "                    </ul>" +
+    "                </p>" +
+    "            </div>" +
+    "            <div class=\"span5\">" +
+    "                <div class=\"sponsor\">" +
+    "                    <a href=\"http://www.personalsjefen.org\" alt=\"Personalsjefen\">" +
+    "                    <img src=\"/img/small/personalsjefen.png\" alt=\"Sponsor\" />" +
+    "                    </a>" +
+    "                </div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/nina.png\" alt=\"Nina og Geir\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/sordal.png\" alt=\"Sordal\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/yngste.png\" alt=\"Yngstemann\" /></div>" +
+    "            </div>" +
+    "        </div>" +
+    "    </div>" +
+    "</section>" +
     ""
   );
 
@@ -320,6 +363,34 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "    </div>" +
     "  </div>" +
     "</div>" +
+    ""
+  );
+
+  $templateCache.put("app/partials/tidligere.html",
+    "<div class=\"container-narrow\">" +
+    "  <div class=\"row-fluid\">" +
+    "    <div>" +
+    "      <h2>Tidligere år</h2>" +
+    "    </div>" +
+    "  </div>" +
+    "</div>" +
+    "<section id=\"about\">" +
+    "    <div class=\"container-narrow\" autoscroll>" +
+    "        <div class=\"row-fluid\">" +
+    "            <div class=\"span7\">" +
+    "                <h3>2012</h3>" +
+    "                <p>" +
+    "                    <a href=\"http://open2012.ruter7.com\">Bilder, resultater mm fra 2012.</a>" +
+    "                </p>" +
+    "            </div>" +
+    "            <div class=\"span5\">" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/bente.png\" alt=\"Vinner lørdag\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/sjur.png\" alt=\"Sjur m. makker\" /></div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/sist.png\" alt=\"Sisteplassen\" /></div>" +
+    "            </div>" +
+    "        </div>" +
+    "    </div>" +
+    "</section>" +
     ""
   );
 
