@@ -443,7 +443,7 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "                                <li>" +
     "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/439\" class=\"paamelding\">" +
     "                                    <i class=\"icon-star\"></i> Meld på til hovedturnering med trukket stjernemakker" +
-    "                                </a>" +
+    "                                </a> (Du må ha mindre enn 30 mesterpoeng)" +
     "                                </li>" +
     "                                <li>" +
     "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/438\" class=\"paamelding\">" +
@@ -469,7 +469,7 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "                            </ul>" +
     "                        </li>" +
     "                        <li>" +
-    "                            <b>10:00-16:00</b> Eliteturnering. 300 per spiller, inkludert kaffe og te. Du må ha minst 30 mesterpoeng for å spille." +
+    "                            <b>10:00-16:00</b> Eliteturnering. 300 per spiller, inkludert kaffe og te. Denne er for stjernespillerne fra lørdagen." +
     "                            <ul>" +
     "                                <li>" +
     "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/440\" class=\"paamelding\">" +
