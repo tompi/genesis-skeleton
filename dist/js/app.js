@@ -378,7 +378,7 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "                        </li>" +
     "                    </ul>" +
     "                </p>" +
-    "                <p><a href=\"#/paamelding\">Trykk her</a> for mer info og melde deg på.</p>" +
+    "                <p><a href=\"#/paamelding\">Trykk her</a> for mer info og melde deg på. Hei Benny.</p>" +
     "            </div>" +
     "            <div class=\"span5\">" +
     "                <div class=\"sponsor\">" +
