@@ -472,7 +472,7 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "                            <b>10:00-16:00</b> Eliteturnering. 300 per spiller, inkludert kaffe og te. Denne er for stjernespillerne fra lørdagen." +
     "                            <ul>" +
     "                                <li>" +
-    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/440\" class=\"paamelding\">" +
+    "                                    <a href=\"http://bridge.no/ruter/turneringsinfo/1/441\" class=\"paamelding\">" +
     "                                    <i class=\"icon-star\"></i> Meld på til eliteturneringen" +
     "                                </a>" +
     "                                </li>" +
