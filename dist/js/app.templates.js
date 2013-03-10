@@ -361,6 +361,18 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "    <div>" +
     "      <h3>1. gruppe stjernespillere kommer 1. mars.</h3>" +
     "    </div>" +
+    "    <ul class=\"stjerner\">" +
+    "        <li ng-repeat=\"s in stjerner\">" +
+    "    			<div class=\"mugshot\">" +
+    "					<img alt=\"...\" src=\"{{s.image}}\"></div>" +
+    "				<div class=\"bio\">" +
+    "					<strong>{{s.name}}</strong>" +
+    "					<p>" +
+    "                    {{s.club}}" +
+    "					</p>" +
+    "				</div>" +
+    "			</li>" +
+    "    </ul>" +
     "  </div>" +
     "</div>" +
     ""
