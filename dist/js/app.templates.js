@@ -359,7 +359,7 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "<div class=\"container-narrow\">" +
     "  <div class=\"row-fluid\">" +
     "    <div>" +
-    "      <h3>1. gruppe stjernespillere kommer 1. mars.</h3>" +
+    "      <h3>1. gruppe stjernespillere:</h3>" +
     "    </div>" +
     "    <ul class=\"stjerner\">" +
     "        <li ng-repeat=\"s in stjerner\">" +

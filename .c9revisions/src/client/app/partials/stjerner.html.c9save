@@ -5,3 +5,4 @@
 {"ts":1362945155621,"patch":[[{"diffs":[[0,"\t\t\t\t<p>\n"],[1,"                    {{s.club}}\n"],[0,"\t\t\t\t\t</p"]],"start1":313,"start2":313,"length1":16,"length2":47}]],"length":455,"saved":false}
 {"ts":1362945163267,"patch":[[{"diffs":[[0,"ul>\n"],[-1,"    <div ng-repeat=\"s in stjerner\">{{s}}</div>\n"],[0,"  </"]],"start1":388,"start2":388,"length1":55,"length2":8}]],"length":408,"saved":false}
 {"ts":1362945181927,"patch":[[{"diffs":[[0,"\n    <ul"],[1," class=\"stjerner\""],[0,">\n      "]],"start1":134,"start2":134,"length1":16,"length2":33}]],"length":425,"saved":false}
+{"ts":1362946433412,"patch":[[{"diffs":[[0,"lere"],[-1," kommer 1. mars."],[1,":"],[0,"</h3"]],"start1":98,"start2":98,"length1":24,"length2":9}]],"length":410,"saved":false}
