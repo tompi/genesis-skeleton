@@ -115,10 +115,19 @@ angular.module('app.controllers').controller('stjernerCtrl', ['$scope', function
 angular.module('app.controllers.stjernerCtrl', []).controller('app.controllers.stjernerCtrl', ['$scope',
 
 function($scope) {
-    $scope.stjerner = [{
+    $scope.stjerner = [
+    {
         "name": "Karl Olav Nybø Hansen",
         "club": "Lyngdal BK",
         "image": "http://open2012.ruter7.com/file/page/stjernespillere/karl%20olav.jpg"
+    }, {
+        "name": "Tom Anders Høiland",
+        "club": "Kristiansands BK",
+        "image": "http://open2012.ruter7.com/file/page/stjernespillere/tom%20h%C3%B8iland.jpg"
+    }, {
+        "name": "Randi Nyheim",
+        "club": "Nøtterøy BK",
+        "image": "/img/stjerner/randinyheim.jpg"
     }, {
         "name": "Roy Olsen",
         "club": "Kristiansands BK",

@@ -26,3 +26,4 @@
 {"ts":1362945537188,"patch":[[{"diffs":[[0," left;\n}"],[1,"\n\nul.stjerner li img {\n    max-width: 200px;\n}"],[0,"\n@fontMu"]],"start1":1075,"start2":1075,"length1":16,"length2":62}]],"length":4741,"saved":false}
 {"ts":1362945586879,"patch":[[{"diffs":[[0," 200px;\n"],[1,"    border-radius: 10px;\n"],[0,"}\n@fontM"]],"start1":1120,"start2":1120,"length1":16,"length2":41}]],"length":4766,"saved":false}
 {"ts":1362946103773,"patch":[[{"diffs":[[0,": left;\n"],[1,"    max-width: 180px;\n    min-height: 210px;    \n"],[0,"}\n\nul.st"]],"start1":1074,"start2":1074,"length1":16,"length2":65},{"diffs":[[0,"-width: "],[-1,"20"],[1,"180px;\n    max-height: 17"],[0,"0px;\n   "]],"start1":1162,"start2":1162,"length1":18,"length2":41}]],"length":4838,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1363453549175,"patch":[[{"diffs":[[0,"eight: 1"],[-1,"7"],[1,"5"],[0,"0px;\n   "]],"start1":1186,"start2":1186,"length1":17,"length2":17}]],"length":4838,"saved":false}
