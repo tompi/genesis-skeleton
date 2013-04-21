@@ -15,6 +15,7 @@ angular
       .when('/stjerner', { controller: 'app.controllers.stjernerCtrl', templateUrl: 'app/partials/stjerner.html'  })
       .when('/paamelding', {templateUrl: 'app/partials/paamelding.html'  })
       .when('/tidligere', {templateUrl: 'app/partials/tidligere.html'  })
+      .when('/underholdning', {templateUrl: 'app/partials/underholdning.html'  })
       .otherwise({
         controller: 'app.controllers.error',
         templateUrl: 'app/partials/error/index.html'
@@ -51,6 +52,7 @@ angular.module('app.controllers.guide', [])
         var list  = [];
         var id    = section ? section.id : undefined;
 
+        
         angular.forEach(sections, function(child) {
           if (child.parent === id) {
             list.push(child);
@@ -117,6 +119,10 @@ angular.module('app.controllers.stjernerCtrl', []).controller('app.controllers.s
 function($scope) {
     $scope.stjerner = [
     {
+        "name": "Trond Hantveit",
+        "club": "TopBridge BC",
+        "image": "http://askerbk.org/var/ezwebin_site/storage/images/kretser/nbf-buskerud/klubber/asker-bk/nyheter/bridgefaglige-kvelder-med-trond-hantveit./1914906-4-nor-NO/Bridgefaglige-kvelder-med-Trond-Hantveit..jpg"
+    }, {
         "name": "Karl Olav Nybø Hansen",
         "club": "Lyngdal BK",
         "image": "http://open2012.ruter7.com/file/page/stjernespillere/karl%20olav.jpg"
@@ -511,16 +517,14 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
   $templateCache.put("app/partials/nav.html",
     "<div class=\"navbar navbar-fixed-top navbar-inverse\" bs-navbar>" +
     "  <div class=\"navbar-inner\">" +
-    "  <div class=\"container-narrow\">" +
     "      <ul class=\"nav\">" +
     "        <li data-match-route=\"/\"><a href=\"#/home\">Hjem</a></li>" +
     "        <li data-match-route=\"/spillested\"><a href=\"#/spillested\">Spillested/overnatting</a></li>" +
     "        <li data-match-route=\"/stjerner\"><a href=\"#/stjerner\">Stjerner</a></li>" +
     "        <li data-match-route=\"/paamelding\"><a href=\"#/paamelding\">Påmelding</a></li>" +
+    "        <li data-match-route=\"/underholdning\"><a href=\"#/underholdning\">Underholdning</a></li>" +
     "        <li data-match-route=\"/tidligere\"><a href=\"#/tidligere\">Tidligere år</a></li>" +
     "      </ul>" +
-    "      <div class=\"clearfix\"></div>" +
-    "  </div>" +
     "  </div>" +
     "</div>" +
     ""
@@ -717,6 +721,53 @@ angular.module("app.templates", []).run(["$templateCache", function($templateCac
     "                <div class=\"smallpic\">" +
     "                    <img src=\"/img/small/sist.png\" alt=\"Sisteplassen\" />" +
     "                </div>" +
+    "            </div>" +
+    "        </div>" +
+    "    </div>" +
+    "</section>" +
+    ""
+  );
+
+  $templateCache.put("app/partials/underholdning.html",
+    "<section id=\"about\">" +
+    "    <div class=\"container-narrow\" autoscroll>" +
+    "        <div class=\"row-fluid\">" +
+    "            <div class=\"span7\">" +
+    "                <h3>Underholdning</h3>" +
+    "                <p>" +
+    "                    Underholdningen lørdag kveld er booket. " +
+    "                    Også i år kommer Sordal og spiller for oss. " +
+    "                    Denne gang som trio. " +
+    "                </p>" +
+    "                <p>" +
+    "                    Stein Roger er kjent fra en rekke musikkprosjekter. Her er to vidoer. " +
+    "                    En fra soloprosjektet Sordal og en fra \"sommer på torvet\" med Radiojam." +
+    "                </p>" +
+    "                <p>" +
+    "                    <a href=\"http://www.youtube.com/watch?v=BSmLXSPDEXY\">Radiojam LIVE Sommer På Torvet 2010</a>" +
+    "                </p>" +
+    "                <p>" +
+    "                    Radiojam er et av Norges mest populære partyband, og underholdt opp til 3000                " +
+    "                </p>                " +
+    "                <p>" +
+    "                    Lørdagens andre artist er plateaktuelle Egil Skram. " +
+    "                    Han har en fantastisk stemme og med litt egenprodusert " +
+    "                    og noen oldie goldies skal han være med å lokke bridgespillere ut på dansegulvet." +
+    "                </p>" +
+    "                <p>" +
+    "                    En liten smakebit finner du her" +
+    "                    <a href=\"https://soundcloud.com/karmakosmetix-music/egil-skram-it-aint-right\">" +
+    "                        Egil Skram - It Ain't Right" +
+    "                    </a>" +
+    "                </p>" +
+    "            </div>" +
+    "            <div class=\"span5\">" +
+    "                <div class=\"sponsor\">" +
+    "                    <a href=\"http://www.personalsjefen.org\" alt=\"Personalsjefen\">" +
+    "                    <img src=\"/img/small/personalsjefen.png\" alt=\"Sponsor\" />" +
+    "                    </a>" +
+    "                </div>" +
+    "                <div class=\"smallpic\"><img src=\"/img/small/sordal.png\" alt=\"Sordal\" /></div>" +
     "            </div>" +
     "        </div>" +
     "    </div>" +

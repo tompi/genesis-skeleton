@@ -9486,3 +9486,10 @@ header h2 {
   background: transparent;
   border-bottom: 3px solid #f89406;
 }
+.navbar-inner {
+  text-align: center;
+}
+.navbar ul.nav {
+  display: inline-block;
+  float: none;
+}

@@ -14,6 +14,7 @@ angular.module('app.controllers.guide', [])
         var list  = [];
         var id    = section ? section.id : undefined;
 
+        
         angular.forEach(sections, function(child) {
           if (child.parent === id) {
             list.push(child);

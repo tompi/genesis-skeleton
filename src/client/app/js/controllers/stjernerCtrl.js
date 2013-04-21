@@ -3,6 +3,10 @@ angular.module('app.controllers.stjernerCtrl', []).controller('app.controllers.s
 function($scope) {
     $scope.stjerner = [
     {
+        "name": "Trond Hantveit",
+        "club": "TopBridge BC",
+        "image": "http://askerbk.org/var/ezwebin_site/storage/images/kretser/nbf-buskerud/klubber/asker-bk/nyheter/bridgefaglige-kvelder-med-trond-hantveit./1914906-4-nor-NO/Bridgefaglige-kvelder-med-Trond-Hantveit..jpg"
+    }, {
         "name": "Karl Olav Nybø Hansen",
         "club": "Lyngdal BK",
         "image": "http://open2012.ruter7.com/file/page/stjernespillere/karl%20olav.jpg"
